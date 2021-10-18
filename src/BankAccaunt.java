@@ -13,5 +13,6 @@ public class BankAccaunt {
         MyAccaunt.name="Zaur";
         MyAccaunt.balance=12.34;
         System.out.println(MyAccaunt.id);
+        System.out.println(MyAccaunt.balance);
     }
 }
