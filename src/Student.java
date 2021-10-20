@@ -3,47 +3,46 @@ public class Student {
     String nameSt;
     String name2St;
     int yearLess;
-    int estimationM;
-    int estimationE;
-    int estimationL;
+   double estimationM;
+    double estimationE;
+    double estimationL;
 
-    int rez ;
+    double rez ;
 }
 class StudentTest {
     public static void main(String[] args) {
-        Student Student1 = new Student();
-        Student Student2 = new Student();
-        Student Student3 = new Student();
+        Student St1 = new Student();
+        Student St2 = new Student();
+        Student St3 = new Student();
 
-        Student1.numberStBilet=100;
-        Student1.nameSt="Вася";
-        Student1.name2St="Белый";
-        Student1.yearLess=2020;
-        Student1.estimationM=5;
-        Student1.estimationE=5;
-        Student1.estimationL=5;
-        Student1.rez=(Student1.estimationM+Student1.estimationE+Student1.estimationL)/3;
+        St1.numberStBilet=100;
+        St1.nameSt="Вася";
+        St1.name2St="Белый";
+        St1.yearLess=2020;
+        St1.estimationM=6.5;
+        St1.estimationE=8.3;
+        St1.estimationL=9.6;
+        St1.rez=(St1.estimationM+St1.estimationE+St1.estimationL)/3;
 
-        Student2.numberStBilet=101;
-        Student2.nameSt="Витя";
-        Student2.name2St="Черный";
-        Student2.yearLess=2019;
-        Student2.estimationM=5;
-        Student2.estimationE=4;
-        Student2.estimationL=3;
-        Student2.rez=(Student2.estimationM+Student2.estimationE+Student2.estimationL)/3;
+        St2.numberStBilet=101;
+        St2.nameSt="Витя";
+        St2.name2St="Черный";
+        St2.yearLess=2019;
+        St2.estimationM=7.9;
+        St2.estimationE=9.3;
+        St2.estimationL=5.8;
+        St2.rez=(St2.estimationM+St2.estimationE+St2.estimationL)/3;
+        St3.numberStBilet=102;
+        St3.nameSt="Петя";
+        St3.name2St="Серый";
+        St3.yearLess=2021;
+        St3.estimationM=8.3;
+        St3.estimationE=6.5;
+        St3.estimationL=8.7;
+        St3.rez=(St3.estimationM+St3.estimationE+St3.estimationL)/3;
 
-        Student3.numberStBilet=102;
-        Student3.nameSt="Петя";
-        Student3.name2St="Серый";
-        Student3.yearLess=2021;
-        Student3.estimationM=2;
-        Student3.estimationE=3;
-        Student3.estimationL=4;
-        Student3.rez=(Student3.estimationM+Student3.estimationE+Student3.estimationL)/3;
-
-        System.out.println(Student1.rez);
-        System.out.println(Student2.rez);
-        System.out.println(Student3.rez);
+        System.out.println("Средняя арифметическая оценка студента : " + St1.nameSt + " " + St1.name2St + " является - " + St1.rez);
+        System.out.println("Средняя арифметическая оценка студента : " + St2.nameSt + " " + St2.name2St + " является - " + St2.rez);
+        System.out.println("Средняя арифметическая оценка студента : " + St3.nameSt + " " + St3.name2St + " является - " + St3.rez);
     }
 }
