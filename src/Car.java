@@ -1,5 +1,5 @@
 public class Car {
-
+//    Car(){}
     String color = "red";
     String engine = "v6";
 }
